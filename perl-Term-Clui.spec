@@ -13,7 +13,6 @@ Source:		ftp.perl.org/pub/CPAN/modules/by-module/Term/%{module}-%{version}.tar.b
 Url:		http://search.cpan.org/dist/%{module}/
 
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-root
 
 %description
 Term::Clui offers a high-level user interface to give the user of 
