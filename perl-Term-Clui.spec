@@ -1,7 +1,7 @@
 %define module	Term-Clui
 %define name	perl-%{module}
 %define version 1.40
-%define release %mkrel 3
+%define release %mkrel 4
 
 Name:		%{name}
 Version:	%{version}
