@@ -1,7 +1,7 @@
 %define module	Term-Clui
 %define name	perl-%{module}
-%define version 1.40
-%define release %mkrel 4
+%define version 1.41
+%define release %mkrel 1
 
 Name:		%{name}
 Version:	%{version}
@@ -9,11 +9,10 @@ Release:	%{release}
 Summary:	%{module} module for perl
 License:	GPL or Artistic
 Group:		Development/Perl
-Source:		ftp.perl.org/pub/CPAN/modules/by-module/Term/%{module}-%{version}.tar.bz2
 Url:		http://search.cpan.org/dist/%{module}/
-
+Source:     http://www.cpan.org/modules/by-module/Term/%{module}-%{version}.tar.gz
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-root
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Term::Clui offers a high-level user interface to give the user of 
