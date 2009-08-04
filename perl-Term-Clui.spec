@@ -1,18 +1,18 @@
-%define module	Term-Clui
-%define name	perl-%{module}
-%define version 1.41
-%define release %mkrel 1
+%define upstream_name	 Term-Clui
+%define upstream_version 1.41
 
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
-Summary:	%{module} module for perl
-License:	GPL or Artistic
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
+Summary:	%{upstream_name} module for perl
+License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{module}/
-Source:     http://www.cpan.org/modules/by-module/Term/%{module}-%{version}.tar.gz
+Url:		http://search.cpan.org/dist/%{upstream_name}/
+Source0:    http://www.cpan.org/modules/by-module/Term/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Term::Clui offers a high-level user interface to give the user of 
@@ -35,7 +35,7 @@ It's fast, simple, and has few external dependencies. It doesn't use curses
 sequences (up down left right normal and reverse) which are very portable.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -56,5 +56,3 @@ rm -rf %{buildroot}
 %doc Changes README
 %{perl_vendorlib}/Term
 %{_mandir}/*/*
-
-
