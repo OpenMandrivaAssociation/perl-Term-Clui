@@ -1,18 +1,18 @@
-%define upstream_name	 Term-Clui
-%define upstream_version 1.44
+%define upstream_name		Term-Clui
+%define upstream_version	1.54
 
-Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Name:				perl-%{upstream_name}
+Version:			%perl_convert_version %{upstream_version}
+Release:			%mkrel 1
 
-Summary:	%{upstream_name} module for perl
-License:	GPL+ or Artistic
-Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}/
-Source0:    http://www.cpan.org/modules/by-module/Term/%{upstream_name}-%{upstream_version}.tar.gz
+Summary:			%{upstream_name} module for perl
+License:			GPLv2+ or Artistic
+Group:				Development/Perl
+Url:				http://search.cpan.org/dist/%{upstream_name}/
+Source0:			http://www.cpan.org/modules/by-module/Term/%{upstream_name}-%{upstream_version}.tar.gz
 
-BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
+BuildArch:			noarch
+BuildRoot:			%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Term::Clui offers a high-level user interface to give the user of 
