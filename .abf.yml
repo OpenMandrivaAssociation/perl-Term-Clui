@@ -1,2 +1,4 @@
+removed_sources:
+  Term-Clui-1.64.tar.gz: 00ab0dc539dc17708a51d3efefabe1c1b1c9d0f0
 sources:
-  "Term-Clui-1.64.tar.gz": 00ab0dc539dc17708a51d3efefabe1c1b1c9d0f0
+  Term-Clui-1.68.tar.gz: 7b3bd4ed3566384f02493c0d1d5fa845debca6ba
