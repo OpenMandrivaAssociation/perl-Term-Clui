@@ -1,15 +1,15 @@
 %define upstream_name		Term-Clui
-%define upstream_version	1.64
+%define upstream_version 1.68
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Version:	%perl_convert_version 1.68
+Release:	1
 
 Summary:	%{upstream_name} module for perl
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}/
-Source0:	http://www.cpan.org/modules/by-module/Term/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Term/Term-Clui-1.68.tar.gz
 
 BuildRequires:	perl-devel
 BuildArch:	noarch
@@ -132,4 +132,5 @@ make test
 
 * Thu May 04 2006 Stéphane Téletchéa <steletch@mandriva.org> 1.35-1mdk
 - Initial Mandriva release
+
 
