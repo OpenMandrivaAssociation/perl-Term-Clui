@@ -8,7 +8,7 @@ Release:	3
 Summary:	%{upstream_name} module for perl
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}/
+Url:		https://search.cpan.org/dist/%{upstream_name}/
 Source0:	http://www.cpan.org/modules/by-module/Term/Term-Clui-1.68.tar.gz
 
 BuildRequires:	perl-devel
