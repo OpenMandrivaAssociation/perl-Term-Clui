@@ -1,14 +1,12 @@
 %define upstream_name		Term-Clui
-%define upstream_version 1.68
-
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 1.68
-Release:	3
+Version:	1.68
+Release:	4
 
 Summary:	%{upstream_name} module for perl
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}/
+Url:		https://metacpan.org/dist/%{upstream_name}/
 Source0:	http://www.cpan.org/modules/by-module/Term/Term-Clui-1.68.tar.gz
 
 BuildRequires:	make
@@ -36,7 +34,7 @@ It's fast, simple, and has few external dependencies. It doesn't use curses
 sequences (up down left right normal and reverse) which are very portable.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -89,9 +87,7 @@ make test
 
 * Tue Aug 04 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 1.410.0-1mdv2010.0
 + Revision: 409023
-- rebuild using %%perl_convert_version
-
-* Sun Mar 08 2009 Guillaume Rousse <guillomovitch@mandriva.org> 1.41-1mdv2009.1
+- rebuild using %1.68 Sun Mar 08 2009 Guillaume Rousse <guillomovitch@mandriva.org> 1.41-1mdv2009.1
 + Revision: 353022
 - new version
 
